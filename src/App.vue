@@ -44,4 +44,9 @@ nav a {
 nav a:hover {
   background-color: #45a049;
 }
+
+nav a.router-link-exact-active {
+  background-color: #333;
+  color: white;
+}
 </style>
