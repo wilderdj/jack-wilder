@@ -21,7 +21,7 @@
   
   <script>
   export default {
-    name: 'Contact',
+    name: 'ContactPage',
     data() {
       return {
         name: '',

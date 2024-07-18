@@ -9,7 +9,7 @@
   
   <script>
   export default {
-    name: 'Skills',
+    name: 'SkillsPage',
     data() {
       return {
         skills: ['JavaScript', 'Vue.js', 'HTML', 'CSS']
