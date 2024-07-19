@@ -1,19 +1,64 @@
 <template>
-    <div class="about">
-      <h1>About Me</h1>
-      <p>Detailed information about yourself.</p>
+  <div class="about">
+    <h1>About Me</h1>
+    <p>I have been working as an IT Solution Analyst/Data Analyst for the last 3 years. Prior to that, I graduated from the University of University of Cincinnati with a degree in Information Systems, supplemented by a major in Marketing and a minor in Business Analytics.</p>
+    <h2>My Resume</h2>
+    <div class="resume-container">
+      <iframe
+        src="/Resume - JW.pdf"
+        width="100%"
+        height="600px"
+        frameborder="0"
+      >
+      </iframe>
+      <a href="/Resume - JW.pdf" download class="download-link">Download Resume</a>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'AboutPage'
-  }
-  </script>
-  
-  <style scoped>
-  .about {
-    padding: 20px;
-  }
-  </style>
-  
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'AboutPage'
+}
+</script>
+
+<style scoped>
+.about {
+  padding: 40px 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  color: #282c34;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #282c34;
+}
+
+p {
+  color: #555;
+}
+
+.resume-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-link:hover {
+  background-color: #21a1f1;
+}
+</style>

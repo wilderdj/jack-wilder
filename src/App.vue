@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About Me</router-link>
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/skills">Skills</router-link>
-      <router-link to="/contact">Contact</router-link>
-    </nav>
-    <router-view/>
+    <header>
+      <nav>
+        <router-link to="/" class="nav-link">Home</router-link>
+        <router-link to="/about" class="nav-link">About Me</router-link>
+        <!-- <router-link to="/projects" class="nav-link">Projects</router-link>
+        <router-link to="/skills" class="nav-link">Skills</router-link> -->
+        <router-link to="/contact" class="nav-link">Contact</router-link>
+      </nav>
+    </header>
+    <main>
+      <router-view/>
+    </main>
+    <footer>
+      <p>&copy; 2024 Jack Wilder. All rights reserved.</p>
+    </footer>
   </div>
 </template>
 
@@ -18,35 +25,51 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #282c34;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
-  background-color: #4CAF50;
-  padding: 10px;
   display: flex;
-  justify-content: space-around;
+  gap: 20px;
 }
 
-nav a {
-  color: white;
+.nav-link {
+  color: #61dafb;
   text-decoration: none;
-  padding: 10px;
   font-weight: bold;
 }
 
-nav a:hover {
-  background-color: #45a049;
+.nav-link:hover {
+  text-decoration: underline;
 }
 
-nav a.router-link-exact-active {
-  background-color: #333;
-  color: white;
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: #282c34;
+  color: #61dafb;
+  text-align: center;
+  padding: 10px 0;
 }
 </style>
