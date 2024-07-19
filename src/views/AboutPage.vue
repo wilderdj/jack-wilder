@@ -5,13 +5,13 @@
     <h2>My Resume</h2>
     <div class="resume-container">
       <iframe
-        src="/Resume - JW.pdf"
+        src="resume-jw.pdf"
         width="100%"
         height="600px"
         frameborder="0"
       >
       </iframe>
-      <a href="/Resume - JW.pdf" download class="download-link">Download Resume</a>
+      <a href="resume-jw.pdf" download class="download-link">Download Resume</a>
     </div>
   </div>
 </template>
@@ -30,12 +30,7 @@ export default {
   border-radius: 10px;
 }
 
-h1 {
-  color: #282c34;
-}
-
-h2 {
-  margin-top: 20px;
+h1, h2 {
   color: #282c34;
 }
 
