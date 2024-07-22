@@ -59,7 +59,7 @@ export default {
         this.badgeLoaded = false;
         document.querySelector('.fallback-image').style.display = 'block';
       }
-    }, 3000); // 3 seconds timeout to check if the badge loaded
+    }, 1000); // 3 seconds timeout to check if the badge loaded
   }
 }
 </script>
