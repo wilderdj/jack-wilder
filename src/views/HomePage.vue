@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <div class="linkedin-badge" ref="linkedinBadge">
+    <div class="linkedin-badge">
       <div v-if="!badgeLoaded">
         <a href="https://www.linkedin.com/in/jack-wilder?trk=profile-badge" target="_blank">
-          <img src="/linkedin-badge.png" alt="LinkedIn Badge" class="fallback-image" />
+          <img :src="imageSrc" alt="LinkedIn Badge" class="fallback-image" />
         </a>
       </div>
       <div v-else class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jack-wilder" data-version="v1">
@@ -29,7 +29,8 @@ export default {
   name: 'HomePage',
   data() {
     return {
-      badgeLoaded: false
+      badgeLoaded: false,
+      imageSrc: process.env.NODE_ENV === 'production' ? '/jack-wilder/linkedin-badge.png' : '/linkedin-badge.png'
     };
   },
   mounted() {
@@ -49,12 +50,14 @@ export default {
     script.onload = checkBadgeLoad;
     script.onerror = () => {
       this.badgeLoaded = false;
+      document.querySelector('.fallback-image').style.display = 'block';
     };
     document.head.appendChild(script);
 
     setTimeout(() => {
       if (!this.badgeLoaded) {
         this.badgeLoaded = false;
+        document.querySelector('.fallback-image').style.display = 'block';
       }
     }, 3000); // 3 seconds timeout to check if the badge loaded
   }
@@ -77,8 +80,9 @@ export default {
 }
 
 .fallback-image {
-  width: 100px; /* Adjust the width to make the image smaller */
+  width: 260px; /* Adjust the width to make the image smaller */
   height: auto; /* Maintain the aspect ratio */
+  display: none; /* Initially hide the fallback image */
 }
 
 h1 {
