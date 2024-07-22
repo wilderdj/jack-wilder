@@ -12,7 +12,7 @@
     </div>
     <h1>Hi, and Welcome to My Portfolio</h1>
     <section class="intro">
-      <p>My name is Jack Wilder. I am an IT Solution Analyst at Sevan Multi-Site Solutions. I have a wide range of experience in creating solutions for stakeholders that ranges from the complete analysis and visualization of client data, to the automation of vital business processes.</p>
+      <p>My name is David Wilder but most people call me Jack. I am an IT Solution Analyst at Sevan Multi-Site Solutions. I have a wide range of experience in creating solutions for stakeholders that ranges from the complete analysis and visualization of client data, to the automation of vital business processes.</p>
     </section>
     <section class="browse">
       <p>Feel free to browse my portfolio and learn more about me.</p>
@@ -59,7 +59,7 @@ export default {
         this.badgeLoaded = false;
         document.querySelector('.fallback-image').style.display = 'block';
       }
-    }, 1000); // 3 seconds timeout to check if the badge loaded
+    }, 500); // 3 seconds timeout to check if the badge loaded
   }
 }
 </script>
