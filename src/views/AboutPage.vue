@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>About Me</h1>
-    <p>I have been working as an IT Solution Analyst/Data Analyst for the last 3 years. Prior to that, I graduated from the University of University of Cincinnati with a degree in Information Systems, supplemented by a major in Marketing and a minor in Business Analytics.</p>
+    <p>I have been working as an IT Solution Analyst/Data Analyst for the last 3 years. Prior to that, I graduated from the University of University of Cincinnati with a degree in Information Systems, supplemented by a major in Marketing and a minor in Business Analytics. You can view my resume below.</p>
     <h2>My Resume</h2>
     <div class="resume-container">
       <iframe

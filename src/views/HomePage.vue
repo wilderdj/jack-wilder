@@ -93,7 +93,7 @@ h1 {
 .intro,
 .browse,
 .github {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 p {
