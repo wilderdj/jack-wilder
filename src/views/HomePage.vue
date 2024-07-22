@@ -7,7 +7,7 @@
         </a>
       </div>
       <div v-else class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jack-wilder" data-version="v1">
-        <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jack-wilder?trk=profile-badge">Jack Wilder</a>
+        <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jack-wilder?trk=profile-badge"></a>
       </div>
     </div>
     <h1>Hi, and Welcome to My Portfolio</h1>
@@ -77,7 +77,7 @@ export default {
 }
 
 .fallback-image {
-  width: 260px; /* Adjust the width to make the image smaller */
+  width: 100px; /* Adjust the width to make the image smaller */
   height: auto; /* Maintain the aspect ratio */
 }
 
