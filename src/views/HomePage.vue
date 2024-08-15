@@ -20,7 +20,7 @@
       </p>
     </section>
     <section class="github">
-      <p>I built this webpage using Vue.js, a progressive JavaScript framework. Vue.js simplifies the development of interactive user interfaces by providing a component-based programming model, building on top of HTML, CSS, and Javascript. This allows for more efficient and maintainable code compared to writing everything from scratch. If you'd like to view the code and see how everything works, please visit my GitHub repository:</p>
+      <p>I built this website using Vue.js, a progressive JavaScript framework. Vue.js simplifies the development of interactive user interfaces by providing a component-based programming model, building on top of HTML, CSS, and Javascript. This allows for more efficient and maintainable code compared to writing everything from scratch. If you'd like to view the code and see how everything works, please visit my GitHub repository:</p>
       <a href="https://github.com/wilderdj/jack-wilder" target="_blank" class="github-link">View my GitHub</a>
     </section>
   </div>
