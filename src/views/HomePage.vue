@@ -16,7 +16,7 @@
     </section>
     <section class="browse">
       <p>
-        Feel free to browse my portfolio and learn more about me. Explore the projects I've worked on <a href="/projects">here</a>, and check out my resume <a href="/about">here</a>. If you have any questions or would like to connect, feel free to email me at <a href="mailto:wilderjack@gmail.com">wilderjack99@gmail.com</a>.
+        Feel free to browse my portfolio and learn more about me. Explore the projects I've worked on <a href="jack-wilder/projects">here</a>, and check out my resume <a href="jack-wilder/about">here</a>. If you have any questions or would like to connect, feel free to email me at <a href="mailto:wilderjack@gmail.com">wilderjack99@gmail.com</a>.
       </p>
     </section>
     <section class="github">
