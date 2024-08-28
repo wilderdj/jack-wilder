@@ -10,13 +10,13 @@
         <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jack-wilder?trk=profile-badge"></a>
       </div>
     </div>
-    <h1>Hi, and Welcome to My Portfolio</h1>
+    <h1 class="page-title">Hi, and Welcome to My Portfolio</h1>
     <section class="intro">
       <p>My name is David Wilder but most people call me Jack. I am an IT Solution Analyst at Sevan Multi-Site Solutions. I have hands-on work experience in creating solutions for stakeholders, covering everything from comprehensive data analysis and visualization to the automation of critical business processes.</p>
     </section>
     <section class="browse">
       <p>
-        Feel free to browse my portfolio and learn more about me. Explore the projects I've worked on <a href="/projects">here</a>, and check out my resume <a href="/about">here</a>. If you have any questions or would like to connect, feel free to email me at <a href="mailto:wilderjack@gmail.com">wilderjack99@gmail.com</a>.
+        Feel free to browse my portfolio and learn more about me. Explore the projects I've worked on <router-link to="/projects">here</router-link>, and check out my resume <router-link to="/about">here</router-link>. If you have any questions or would like to connect, feel free to email me at <a href="mailto:wilderjack@gmail.com">wilderjack99@gmail.com</a>.
       </p>
     </section>
     <section class="github">
@@ -69,27 +69,30 @@ export default {
 <style scoped>
 .home {
   position: relative;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
   padding: 40px 20px;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
+.page-title {
+  font-size: 3em;
+  font-weight: bold;
+  color: #282c34;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .linkedin-badge {
-  float: left; /* Float the badge to the left */
-  margin-right: 20px; /* Add space between the badge and the text */
+  float: left; 
+  margin-right: 20px;
 }
 
 .fallback-image {
-  width: 260px; /* Adjust the width to make the image smaller */
-  height: auto; /* Maintain the aspect ratio */
+  width: 260px; 
+  height: auto; 
   display: none; /* Initially hide the fallback image */
-}
-
-h1 {
-  color: #282c34;
-  margin-bottom: 20px;
 }
 
 .intro,
@@ -102,17 +105,18 @@ h1 {
 p {
   color: #555;
   line-height: 1.6;
+  font-size: 18px;
 }
 
 .github {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align text to the left */
+  align-items: flex-start; 
   margin-bottom: 10px;
 }
 
 .github-link {
-  align-self: center; /* Center the button horizontally */
+  align-self: center; 
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;

@@ -1,20 +1,44 @@
 <template>
   <div class="projects">
-    <h1>My Projects</h1>
-    <router-link 
-      v-for="project in projects" 
-      :key="project.id" 
-      :to="project.route" 
-      class="project-link-wrapper"
-    >
-      <div class="project">
-        <img :src="require(`@/assets/${project.imagePath}`)" :alt="project.title" class="project-preview-image" />
-        <div class="project-info">
-          <h2>{{ project.title }}</h2>
-          <p>{{ project.description }}</p>
+    <h1 class="page-title">My Projects</h1>
+    
+    <!-- Dashboarding Section -->
+    <div class="project-category">
+      <h2 class="category-title">Dashboarding</h2>
+      <router-link 
+        v-for="project in dashboardingProjects" 
+        :key="project.id" 
+        :to="project.route" 
+        class="project-link-wrapper"
+      >
+        <div class="project">
+          <img :src="require(`@/assets/${project.imagePath}`)" :alt="project.title" class="project-preview-image" />
+          <div class="project-info">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+          </div>
         </div>
-      </div>
-    </router-link>
+      </router-link>
+    </div>
+
+    <!-- Coding Projects Section -->
+    <div class="project-category">
+      <h2 class="category-title">Coding Projects</h2>
+      <router-link 
+        v-for="project in codingProjects" 
+        :key="project.id" 
+        :to="project.route" 
+        class="project-link-wrapper"
+      >
+        <div class="project">
+          <img :src="require(`@/assets/${project.imagePath}`)" :alt="project.title" class="project-preview-image" />
+          <div class="project-info">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+          </div>
+        </div>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -23,7 +47,7 @@ export default {
   name: 'ProjectsPage',
   data() {
     return {
-      projects: [
+      dashboardingProjects: [
         { 
           id: 1, 
           title: 'Client Reporting', 
@@ -38,6 +62,15 @@ export default {
           imagePath: 'store-impact-dashboard/hurricane-dashboard.png', 
           route: '/store-impact-dashboard' 
         }
+      ],
+      codingProjects: [
+        { 
+          id: 3, 
+          title: 'RPA Tool', 
+          description: 'This project automates the process of pulling data from incoming emails using an Azure Logic Apps and a Python Function App. The Logic App manages the dataflow, invoking the Python Function App to perform modifications on the data before sending it back to the user. The project showcases the integration of cloud services to streamline workflows and enhance efficiency.',
+          imagePath: 'rpa-tool/workflow.png', 
+          route: '/rpa-tool' 
+        }
       ]
     }
   }
@@ -50,6 +83,26 @@ export default {
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.page-title {
+  font-size: 3em;
+  font-weight: bold;
+  color: #282c34;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project-category {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 2em;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .project-link-wrapper {
@@ -79,13 +132,16 @@ export default {
   margin-right: 20px;
 }
 
-.project-info {
-  flex: 1;
+.project-info p {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 18px; 
 }
 
-.project-info h2 {
+.project-title {
   color: #282c34;
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 0px;
 }
 
 .project-info p {
@@ -93,3 +149,4 @@ export default {
   margin-bottom: 10px;
 }
 </style>
+

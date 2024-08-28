@@ -55,6 +55,7 @@ nav {
   color: #61dafb;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .nav-link:hover {

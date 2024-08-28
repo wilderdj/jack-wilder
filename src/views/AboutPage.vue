@@ -1,8 +1,8 @@
 <template>
   <div class="about">
-    <h1>About Me</h1>
-    <p>I have been working as an IT Solution Analyst/Data Analyst for the last 3 years. Prior to that, I graduated from the University of University of Cincinnati with a degree in Information Systems, supplemented by a major in Marketing and a minor in Business Analytics. You can view my resume below.</p>
-    <h2>My Resume</h2>
+    <h1 class="page-title">About Me</h1>
+    <p>I have been working as an IT Solution Analyst/Data Analyst for the last 3 years. Prior to that, I graduated from the University of Cincinnati with a degree in Information Systems, supplemented by a major in Marketing and a minor in Business Analytics. You can view my resume below.</p>
+    <h2 class="section-title">My Resume</h2>
     <div class="resume-container">
       <iframe
         src="resume-jw.pdf"
@@ -21,7 +21,6 @@ export default {
   name: 'AboutPage'
 }
 </script>
-
 <style scoped>
 .about {
   padding: 40px 20px;
@@ -30,12 +29,26 @@ export default {
   border-radius: 10px;
 }
 
-h1, h2 {
+.page-title {
+  font-size: 3em;
+  font-weight: bold;
   color: #282c34;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 2em;
+  color: #282c34;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 p {
   color: #555;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 .resume-container {
